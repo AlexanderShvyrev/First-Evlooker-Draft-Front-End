@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="calendar.css">
+    <script src="https://kit.fontawesome.com/866beac6fc.js" crossorigin="anonymous"></script>
+    <title>evlooker</title>
+</head>
+<!-- style="background-image: url(img/bg_image.jpg); background-size:cover; background-attachment:local;" -->
+
+<body class="bg-white">
+
+    <!-- this is a top navigation bar -->
+
+    <nav class="flex items-center justify-between lg:fixed top-0 w-full z-1 flex-wrap bg-blue-900 p-6">
+        <div class="flex items-center flex-shrink-0 mx-16">
+            <a href="#"><img class="h-40 opacity-90" src="img/logo.png" alt="logo"></a>
+        </div>
+
+        <div class="w-full block flex-grow sm:flex sm:items-center sm:w-auto">
+            <div class="text-2xl sm:flex-grow">
+                <a href="#" class="block mt-4 sm:inline-block sm:mt-0 text-white hover:text-yellow-400 mr-4">
+                    About
+                </a>
+                <a href="#" class="block mt-4 sm:inline-block sm:mt-0 text-white hover:text-yellow-400 mr-4">
+                    Partnership
+                </a>
+                <a href="#" class="block mt-4 sm:inline-block sm:mt-0 text-white hover:text-yellow-400">
+                    Contact
+                </a>
+            </div>
+            <div class="hidden lg:flex items-center flex-shrink-0 mx-12">
+                <a href="#"
+                    class="inline-block px-4 mx-16 py-2 text-6xl font-extrabold leading-none rounded-full text-white border-white hover:border-transparent hover:text-yellow-400 hover:bg-transparent mt-4 md:mt-0"><i
+                        class="fas fa-user-circle"></i></a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- CATEGORIES -->
+
+
+    <div
+        class="hidden md:grid-cols-3 gap-10 lg:grid grid-cols-5 gap-10 xl:flex flex-row mt-64 p-10 mx-20 mb-20 justify-evenly">
+        <a href="#">
+            <div
+                class="relative w-48 h-40 border border-gray-400 shadow-md  text-blue-800 rounded-lg mr-5 bg-gray-300 hover:bg-gray-400">
+                <span class="absolute top-0 left-0 pt-5 pl-5 text-2xl font-bold">Fitness</span>
+                <span class="absolute bottom-0 left-0 pb-5 pl-5 text-yellow-600 text-4xl"><i
+                        class="fas fa-skiing-nordic"></i></span>
+            </div>
+        </a>
+        <a href="#">
+            <div
+                class="relative w-48 h-40 border border-gray-400 shadow-md text-blue-800 rounded-lg mr-5 bg-gray-300 hover:bg-gray-400">
+                <span class=" absolute top-0 left-0 pt-5 pl-5 text-2xl font-bold">Food</span>
+                <span class="absolute bottom-0 left-0 pb-5 pl-5 text-red-600 text-4xl"><i
+                        class="fas fa-utensils"></i></span>
+            </div>
+        </a>
+        <a href="#">
+            <div
+                class="relative w-48 h-40 border border-gray-400 shadow-md text-blue-800 rounded-lg mr-5 bg-gray-300 hover:bg-gray-400">
+                <span class=" absolute top-0 left-0 pt-5 pl-5 text-2xl font-bold">Music</span>
+                <span class="absolute bottom-0 left-0 pb-5 pl-5 text-blue-600 text-4xl"><i
+                        class="fas fa-guitar"></i></span>
+            </div>
+        </a>
+        <a href="#">
+            <div
+                class="relative w-48 h-40 border border-gray-400 shadow-md text-blue-800 rounded-lg mr-5 bg-gray-300 hover:bg-gray-400">
+                <span class=" absolute top-0 left-0 pt-5 pl-5 text-2xl font-bold">Movies</span>
+                <span class="absolute bottom-0 left-0 pb-5 pl-5 text-green-600 text-4xl"><i
+                        class="fas fa-film"></i></span>
+            </div>
+        </a>
+        <a href="#">
+            <div
+                class="relative w-48 h-40 border border-gray-400 shadow-md text-blue-800 rounded-lg mr-5 bg-gray-300 hover:bg-gray-400">
+                <span class=" absolute top-0 left-0 pt-5 pl-5 text-2xl font-bold">Art</span>
+                <span class="absolute bottom-0 left-0 pb-5 pl-5 text-purple-600 text-4xl"><i
+                        class="fas fa-palette"></i></span>
+            </div>
+        </a>
+        <a href="#">
+            <div
+                class="relative w-48 h-40 border border-gray-400 shadow-md text-blue-800 rounded-lg mr-5 bg-gray-300 hover:bg-gray-400">
+                <span class=" absolute top-0 left-0 pt-5 pl-5 text-2xl font-bold">Museums</span>
+                <span class="absolute bottom-0 left-0 pb-5 pl-5 text-gray-900 text-4xl"><i
+                        class="fas fa-landmark"></i></span>
+            </div>
+        </a>
+        <a href="#">
+            <div
+                class="relative w-48 h-40 border border-gray-400 shadow-md text-blue-800 rounded-lg mr-5 bg-gray-300 hover:bg-gray-400">
+                <span class=" absolute top-0 left-0 pt-5 pl-5 text-2xl font-bold">Lectures</span>
+                <span class="absolute bottom-0 left-0 pb-5 pl-5 text-pink-600 text-4xl"><i
+                        class="fas fa-graduation-cap"></i></span>
+            </div>
+        </a>
+        <a href="#">
+            <div
+                class="relative w-48 h-40 border border-gray-400 shadow-md text-blue-800 rounded-lg mr-5 bg-gray-300 hover:bg-gray-400">
+                <span class=" absolute top-0 left-0 pt-5 pl-5 text-2xl font-bold">Workshops</span>
+                <span class="absolute bottom-0 left-0 pb-5 pl-5 text-orange-600 text-4xl"><i
+                        class="fas fa-hammer"></i></span>
+            </div>
+        </a>
+        <a href="#">
+            <div
+                class="relative w-48 h-40 border border-gray-400 shadow-md text-blue-800 rounded-lg mr-5 bg-gray-300 hover:bg-gray-400">
+                <span class=" absolute top-0 left-0 pt-5 pl-5 text-2xl font-bold">Culture</span>
+                <span class="absolute bottom-0 left-0 pb-5 pl-5 text-teal-600 text-4xl"><i
+                        class="fas fa-globe-americas"></i></span>
+            </div>
+        </a>
+        <a href="#">
+            <div
+                class="relative w-48 h-40 border border-gray-400 shadow-md text-blue-800 rounded-lg mr-5 bg-gray-300 hover:bg-gray-400">
+                <span class=" absolute top-0 left-0 pt-5 pl-5 text-2xl font-bold">Sport</span>
+                <span class="absolute bottom-0 left-0 pb-5 pl-5 text-indigo-600 text-4xl"><i
+                        class="fas fa-basketball-ball"></i></span>
+            </div>
+        </a>
+    </div>
+    <!-- Search bar -->
+
+    <div class="flex flex-row justify-center pt-10 px-10">
+        <h3 class="text-gray-900 uppercase font-bold bold text-2xl mb-10 leading-none flex justify-center">Search for
+            events
+            you like</h3>
+    </div>
+    <div class="mx-5 flex flex-row justify-center lg:mx-20">
+
+        <div class="w-full max-w-lg">
+            <form class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+                <div class="mb-4">
+                    <input type="text" class="input" id="where" placeholder="Saint Petersburg" />
+                </div>
+                <div class="mb-4">
+                    <div class="relative">
+                        <select id="guests" class="input select">
+                            <option>Category</option>
+                            <option>Art</option>
+                            <option>Comedy</option>
+                            <option>Theatre</option>
+                            <option>Concert</option>
+                            <option>Night life</option>
+                        </select>
+                        <div
+                            class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                            <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                                <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-6">
+                    <input type="date" class="input" id="date" placeholder="dd/mm/yyyy" />
+                </div>
+                <div class="flex items-center justify-between">
+                    <input type="submit" class="btn" value="Search" />
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Featured events cards -->
+
+    <div class="flex flex-row justify-center pt-10 px-10">
+        <!-- Header for featured events  -->
+        <h3 class="text-gray-900 text-2xl uppercase font-semibold mb-10">
+            Here are some recently featured events:
+            <!-- <a class="underline" href="#">see all</a> -->
+        </h3>
+    </div>
+
+
+    <div class="mx-5 flex justify-evenly mb-20 lg:mx-20 p-10 relative">
+        <div class="grid grid-cols-1 gap-2 md:grid-cols-2 gap-4 lg:grid-cols-3 gap-6 xl:grid-cols-4 gap-8">
+            <a href="#">
+                <div class="relative w-auto rounded bg-white opacity-90 border-gray-200 shadow-md overflow-hidden">
+                    <img src="img/balloons.jpg" alt="ballons" class="h-32 sm:h-48 w-full object-cover">
+                    <div class="m-4 h-32">
+                        <span class="font-bold text-xl">2020 Annual Balloon Festival</span>
+                        <span class="block text-gray-700">Come and celebrate with us the annual balloon
+                            festival</span>
+                        <span class="absolute right-0 bottom-0 m-2 block text-gray-700 font-semibold uppercase">thu,
+                            aug
+                            15-sun,aug 18</span>
+                    </div>
+                    <div class="absolute top-0 right-0 m-1 p-2 text-red-600 text-3xl">
+                        <span><i class="fas fa-bookmark"></i></span>
+                    </div>
+                </div>
+            </a>
+            <a href="#">
+                <div class="relative w-auto rounded bg-white opacity-90 border-gray-200 shadow-md overflow-hidden">
+                    <img src="img/balloons.jpg" alt="ballons" class="h-32 sm:h-48 w-full object-cover">
+                    <div class="m-4 h-32">
+                        <span class="font-bold text-xl">2020 Annual Balloon Festival</span>
+                        <span class="block text-gray-700">Come and celebrate with us the annual balloon
+                            festival</span>
+                        <span class="absolute right-0 bottom-0 m-2 block text-gray-700 font-semibold uppercase">thu,
+                            aug
+                            15-sun,aug 18</span>
+                    </div>
+                    <div class="absolute top-0 right-0 m-1 p-2 text-red-600 text-3xl">
+                        <span><i class="fas fa-bookmark"></i></span>
+                    </div>
+                </div>
+            </a>
+            <a href="#">
+                <div class="relative rounded bg-white opacity-90 border-gray-200 shadow-md overflow-hidden">
+                    <img src="img/planets.jpg" alt="ballons" class="h-32 sm:h-48 w-full object-cover">
+                    <div class="m-4 h-32">
+                        <span class="font-bold text-xl">Planet observation</span>
+                        <span class="block text-gray-700">Planets observation</span>
+                        <span class="absolute right-0 bottom-0 m-2 block text-gray-700 font-semibold uppercase">thu,
+                            aug 15-sun,aug 18</span>
+                    </div>
+                    <div class="absolute top-0 right-0 m-1 p-2 text-red-600 text-3xl">
+                        <span><i class="fas fa-bookmark"></i></span>
+                    </div>
+                </div>
+            </a>
+            <a href="#">
+                <div class="relative rounded bg-white opacity-90 border-gray-200 shadow-md overflow-hidden">
+                    <img src="img/donuts.jpg" alt="ballons" class="h-32 sm:h-48 w-full object-cover">
+                    <div class="m-4 h-32">
+                        <span class="font-bold text-xl">2020 Annual Donuts Festival</span>
+                        <span class="block text-gray-700">All you can eat donuts</span>
+                        <span class="absolute right-0 bottom-0 m-2 block text-gray-700 font-semibold uppercase">thu,
+                            aug 15-sun,aug 18</span>
+                    </div>
+                    <div class="absolute top-0 right-0 m-1 p-2 text-red-600 text-3xl">
+                        <span><i class="fas fa-bookmark"></i></span>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <a class="absolute top-0 right-0 text-blue-900 text-lg font-semibold m-3" href="#">See all</a>
+    </div>
+
+
+    <div class="flex flex-row justify-center pt-10 px-10">
+        <h3 class="text-gray-900 text-2xl uppercase font-semibold mb-10">
+            Events happening now:
+            <!-- <a class="underline" href="#">see all</a> -->
+        </h3>
+    </div>
+
+
+
+    <!-- this are the cards with events -->
+
+    <div class="mx-5 flex justify-evenly mb-20 lg:mx-20 p-10 relative">
+        <a class="absolute top-0 right-0 text-blue-900 text-lg font-semibold m-3" href="#">See all</a>
+        <div class="grid grid-cols-1 gap-2 md:grid-cols-2 gap-4 lg:grid-cols-3 gap-6 xl:grid-cols-4 gap-8">
+
+            <!-- cards go here -->
+
+            <div class="rounded bg-white opacity-90 border-gray-200 shadow-lg overflow-hidden relative">
+                <img src="img/balloons.jpg" alt="ballons" class="h-32 sm:h-48 w-full object-cover">
+                <div class="m-4">
+                    <span class="font-bold text-2xl">2020 Annual Balloon Festival</span>
+                    <span class="block text-gray-500 text-lg">Come and celebrate the annual balloon festival</span>
+                    <span class="block text-gray-500 font-semibold uppercase">thu, aug 15-sun,aug 18</span>
+                </div>
+                <div
+                    class="absolute top-0 left-0 m-1 p-2 bg-yellow-400 text-gray-700 text-xs uppercase font-bold rounded-full">
+                    <span><i class="fas fa-map-marker-alt m-1"></i>Cincinnati, OH</span>
+                </div>
+                <div class="flex flex-row m-4 justify-center">
+                    <button
+                        class="px-4 py-2 mr-2 leading-none bg-blue-900 text-white uppercase border border-transparent hover:bg-transparent hover:border-blue-900 hover:text-black py-2 px-4 rounded">
+                        interested
+                    </button>
+                </div>
+            </div>
+
+            <div class="rounded bg-white opacity-90 border-gray-200 shadow-lg overflow-hidden relative">
+                <img src="img/hello_summer.jpg" alt="festival" class="h-32 sm:h-48 w-full object-cover">
+                <div class="m-4">
+                    <span class="font-bold text-2xl">Summer mini photo shoots</span>
+                    <span class="block text-gray-500 text-lg">Amazing photographs workshop</span>
+                    <span class="block text-gray-500 font-semibold uppercase">thu, aug 15-sun,aug 18</span>
+                </div>
+                <div
+                    class="absolute top-0 left-0 m-1 p-2 bg-yellow-400 text-gray-700 text-xs uppercase font-bold rounded-full">
+                    <span><i class="fas fa-map-marker-alt m-1"></i>Cottel Park</span>
+                </div>
+                <div class="flex flex-row m-4 justify-center">
+                    <button
+                        class="px-4 py-2 mr-2 leading-none bg-blue-900 text-white uppercase border border-transparent hover:bg-transparent hover:border-blue-900 hover:text-black py-2 px-4 rounded">
+                        interested
+                    </button>
+                </div>
+            </div>
+
+            <div class="rounded bg-white opacity-90 border-gray-200 shadow-lg overflow-hidden relative">
+                <img src="img/planets.jpg" alt="planets" class="h-32 sm:h-48 w-full object-cover">
+                <div class="m-4">
+                    <span class="font-bold text-2xl">Planets observation night</span>
+                    <span class="block text-gray-500 text-lg">Planets observation event</span>
+                    <span class="block text-gray-500 font-semibold uppercase">wed, aug 5, 19:00</span>
+                </div>
+                <div
+                    class="absolute top-0 left-0 m-1 p-2 bg-yellow-400 text-gray-700 text-xs uppercase font-bold rounded-full">
+                    <span><i class="fas fa-map-marker-alt m-1"></i>Cincinnati Observatory</span>
+                </div>
+                <div class="flex flex-row m-4 justify-center">
+                    <button
+                        class="px-4 py-2 mr-2 leading-none bg-blue-900 text-white uppercase border border-transparent hover:bg-transparent hover:border-blue-900 hover:text-black py-2 px-4 rounded">
+                        interested
+                    </button>
+                </div>
+            </div>
+            <div class="rounded bg-white opacity-90 border-gray-200 shadow-lg overflow-hidden relative">
+                <img src="img/margarita.jpg" alt="margaritas" class="h-32 sm:h-48 w-full object-cover">
+                <div class="m-4">
+                    <span class="font-bold text-2xl">Margaritas night out</span>
+                    <span class="block text-gray-500 text-lg">Come and drink different margaritas with us</span>
+                    <span class="block text-gray-500 font-semibold uppercase">sat, oct 10, 14:00</span>
+                </div>
+                <div
+                    class="absolute top-0 left-0 m-1 p-2 bg-yellow-400 text-gray-700 text-xs uppercase font-bold rounded-full">
+                    <span><i class="fas fa-map-marker-alt m-1"></i>Dayton</span>
+                </div>
+                <div class="flex flex-row m-4 justify-center">
+                    <button
+                        class="px-4 py-2 mr-2 leading-none bg-blue-900 text-white uppercase border border-transparent hover:bg-transparent hover:border-blue-900 hover:text-black py-2 px-4 rounded">
+                        interested
+                    </button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- FOOTER -->
+
+    <footer class="bg-transparent py-10 text-sm">
+        <div class="max-w-5xl mx-auto flex justify-center items-center px-4 lg:px-0">
+            <p class="text-gray-900 text-lg pl-2">&copy; 2020 Evlooker. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="main.js"></script>
+</body>
+
+</html>
